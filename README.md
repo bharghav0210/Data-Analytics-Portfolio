@@ -157,8 +157,8 @@ This portfolio demonstrates practical experience in:
 
 If you'd like to connect or discuss opportunities:
 
-- **LinkedIn:** https://linkedin.com/in/your-profile  
-- **Email:** your-email@example.com
+- **LinkedIn:** https://www.linkedin.com/in/bharghav-madhiraju/  
+- **Email:**bhargavmadhiraju123@gmail.com
 
 ---
 
