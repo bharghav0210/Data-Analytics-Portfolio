@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[Inventory Level] < [Units Sold]
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[Inventory Level] < [Units Sold]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="678" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\Low_Stock_Alert.xlsx|||Low_Stock_Items</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Low_Stock_Alert.xlsx
+Query=Low_Stock_Items</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1205" y="53" width="180" height="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 20</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1230" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\Sales_Performance_By_Region.xlsx|||Sales_Performance_By_Region</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <MipTenantId />
+                <PreserveFormat>False</PreserveFormat>
+                <MipSensitivity />
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <SuppressBlankFile>False</SuppressBlankFile>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Sales_Performance_By_Region.xlsx
+Query=Sales_Performance_By_Region</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1230" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\Inventory_Value_By_Store.xlsx|||Inventory_Value_By_Store</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <MipTenantId />
+                <PreserveFormat>False</PreserveFormat>
+                <MipSensitivity />
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <SuppressBlankFile>False</SuppressBlankFile>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Inventory_Value_By_Store.xlsx
+Query=Inventory_Value_By_Store</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1254" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\Revenue_By_Product_Category.xlsx|||Revenue_By_Product_Category</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <MipTenantId />
+                <PreserveFormat>False</PreserveFormat>
+                <MipSensitivity />
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <SuppressBlankFile>False</SuppressBlankFile>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Revenue_By_Product_Category.xlsx
+Query=Revenue_By_Product_Category</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="869" y="37" width="179" height="469" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Business Analytics
+]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Business Analytics
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="894" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Region" action="GroupBy" rename="Region" />
+                <SummarizeField field="Units Sold" action="Sum" rename="Sum_Units Sold" />
+                <SummarizeField field="Estimated_Revenue" action="Sum" rename="Sum_Estimated_Revenue" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Sales Performance by Region</Name>
+              <DefaultAnnotationText>Sales Performance by Region</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="906" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Store ID" action="GroupBy" rename="Store ID" />
+                <SummarizeField field="Inventory_Value" action="Sum" rename="Total_Inventory_Value" />
+                <SummarizeField field="Units Sold" action="Sum" rename="Total_Units Sold" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Inventory Value by Store</Name>
+              <DefaultAnnotationText>Inventory Value by Store</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="894" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Category" action="GroupBy" rename="Category" />
+                <SummarizeField field="Estimated_Revenue" action="Sum" rename="Sum_Estimated_Revenue" />
+                <SummarizeField field="Inventory_Value" action="Sum" rename="Sum_Inventory_Value" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Revenue by Product Category</Name>
+              <DefaultAnnotationText>Revenue by Product Category</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="569" y="181" width="189" height="181" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Feature Engineering
+]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Feature Engineering
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="594" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Inventory Level] * [Price]" field="Inventory_Value" size="8" type="Double" enabled="true" />
+                <FormulaField expression="[Units Sold] * [Price]" field="Estimated_Revenue" size="8" type="Double" enabled="true" />
+                <FormulaField expression="[Price] * (1 - [Discount])" field="Discounted_Price" size="8" type="Double" enabled="true" />
+                <FormulaField expression="IF [Inventory Level] &lt;= 20 THEN &quot;Low Stock&quot;&#xA;ELSEIF [Inventory Level] &lt;= 50 THEN &quot;Medium Stock&quot;&#xA;ELSE &quot;High Stock&quot;&#xA;ENDIF" field="Stock_Status" size="2147483647" type="V_String" enabled="true" />
+                <FormulaField expression="IF [Units Sold] &gt;= 50 THEN &quot;High Demand&quot;&#xA;ELSEIF [Units Sold] &gt;= 20 THEN &quot;Moderate Demand&quot;&#xA;ELSE &quot;Low Demand&quot;&#xA;ENDIF" field="Sales_Performance" size="2147483647" type="V_String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Formula (Create KPIs)</Name>
+              <DefaultAnnotationText>Formula (Create KPIs)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221" y="181" width="249" height="181" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Data Preperation
+]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Data Preperation
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
+            <Position x="246" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RemoveNullRows value="False" />
+              <RemoveNullColumns value="False" />
+              <RemoveTabsLineBreaksAndDuplicates value="True" />
+              <RemoveLeadingAndTrailingWhitespace value="True" />
+              <RemoveAllWhitespaces value="False" />
+              <RemoveHTMLTags value="False" />
+              <RemoveInvisibleCharacters value="True" />
+              <Fields>
+                <Field value="Date" selected="True" />
+                <Field value="Store ID" selected="True" />
+                <Field value="Product ID" selected="True" />
+                <Field value="Category" selected="True" />
+                <Field value="Region" selected="True" />
+                <Field value="Inventory Level" selected="True" />
+                <Field value="Units Sold" selected="True" />
+                <Field value="Units Ordered" selected="True" />
+                <Field value="Demand Forecast" selected="True" />
+                <Field value="Price" selected="True" />
+                <Field value="Discount" selected="True" />
+                <Field value="Weather Condition" selected="True" />
+                <Field value="Holiday/Promotion" selected="True" />
+                <Field value="Competitor Pricing" selected="True" />
+                <Field value="Seasonality" selected="True" />
+                <Field value="*Unknown" selected="True" />
+              </Fields>
+              <RemoveLetters value="False" />
+              <RemoveNumbers value="False" />
+              <RemovePunctuation value="False" />
+              <Letters value="" />
+              <Numbers value="" />
+              <Punctuations value="" />
+              <Exceptions value="" />
+              <Checkbox_ReplaceStringColumns value="True" />
+              <Checkbox_ReplaceNumericColumns value="True" />
+              <radioButton_ReplaceNullwithBlanks value="True" />
+              <radioButton_ReplaceBlankswithNulls value="False" />
+              <radioButton_ReplaceNullwithZero value="True" />
+              <radioButton_ReplaceZerowithNulls value="False" />
+              <ReplaceWithBlanks value="True" />
+              <ReplaceWithZero value="True" />
+              <CheckBox_ModifyCase value="False" />
+              <ModifyCase value="none" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Data Cleaning</Name>
+              <DefaultAnnotationText>Data Cleaning</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDataCleanse" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="366" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Date" selected="True" type="Date" size="10" />
+                <SelectField field="Store ID" selected="True" />
+                <SelectField field="Product ID" selected="True" />
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Region" selected="True" />
+                <SelectField field="Inventory Level" selected="True" type="Int32" size="4" />
+                <SelectField field="Units Sold" selected="True" type="Int32" size="4" />
+                <SelectField field="Units Ordered" selected="True" type="Int32" size="4" />
+                <SelectField field="Price" selected="True" type="Double" size="8" />
+                <SelectField field="Discount" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Selecting the Fields</Name>
+              <DefaultAnnotationText>Selecting the Fields</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="181" width="160" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Data Ingestion
+]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Data Ingestion
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Input Data</Name>
+              <DefaultAnnotationText>Input Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Store ID" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Product ID" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Category" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Region" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Inventory Level" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Units Sold" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Units Ordered" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Demand Forecast" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Price" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Discount" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Weather Condition" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Holiday/Promotion" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Competitor Pricing" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+                <Field name="Seasonality" size="254" source="File: C:\Users\bharg\OneDrive\Desktop\data_analyst\Retail_Store_Inventory_Forecasting\retail_store_inventory.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name />
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4db0031b-ede1-4c68-86f9-5e3c1942fa5b" />
+      <Telemetry>
+        <PreviousWorkflowId value="a3e5b940-2c4c-4b33-b45c-44088631f216" />
+        <OriginWorkflowId value="a3e5b940-2c4c-4b33-b45c-44088631f216" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
